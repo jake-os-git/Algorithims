@@ -69,20 +69,24 @@ public class main {
     //Q10
     public static void shuffleArray() {
         //fill array
-        int inserted[] = new int[6];
+        int size = 6;
+        int inserted[] = new int[size];
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a 6 ints between 0 and 10");
-        for (int i : inserted) {
+        for (int i = 0; i < size; i++) {
             inserted[i] = sc.nextInt();
         }
         System.out.println("Thanks!");
+        for (int i = 0; i < size; i++) {
+            System.out.print(inserted[i]+ " ");
+        }
 
         int a,b,c;
-        int size = 7;
+
 
         Random rnd = new Random();
         //fill array
-        for(int i=1;i<=size+1;i++){
+        for(int i=1;i<size;i++){
             inserted[i] = i;
         }
         //shuffle that bitch
